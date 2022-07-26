@@ -1,6 +1,6 @@
 # FriendsInfoProject
 
-##Softwares Used
+## Softwares Used
 1. SQL
 2. XAMPP
 3. Microsoft Excel
