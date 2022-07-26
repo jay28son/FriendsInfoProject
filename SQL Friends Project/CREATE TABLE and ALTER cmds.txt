@@ -1,0 +1,68 @@
+--Creating Initial Information Table
+
+create table friendsinfo(
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    EMAIL_ADDRESS VARCHAR(255),
+    BIRTHDAY VARCHAR(255),
+    Gender VARCHAR (255),
+    PRIMARY KEY(ID)
+);
+
+--Creating boba orders table
+
+create table boba_orders(
+    boba_id INT NOT NULL AUTO_INCREMENT,
+    Boba_Drink Varchar(255)
+);
+
+--altering table to add cost of each drink+
+
+alter table boba_orders
+ADD BOBA_COST Int NOT NULL
+
+--creating table utilizing friend_id and boba_id
+
+create table friends_boba_order(
+    id int not NULL AUTO_INCREMENT,
+    friend_id INT NOT NULL,
+    boba_id INT NOT NULL,
+    primary key(id)
+);
+
+CREATE TABLE FOOD(
+    food_id INT NOT NULL AUTO_INCREMENT,
+    Culture VARCHAR(255),
+    primary key (food_id)
+);
+
+ALTER TABLE FOOD
+ADD AVG_FOOD_COST$ INT NOT NULL;
+
+
+CREATE TABLE FRIENDS_FOOD_ORDER(
+    food_id INT NOT NULL,
+    friend_id INT NOT NULL
+);
+
+INSERT INTO FRIENDS_fOOD_ORDER(FOOD_ID, FRIEND_ID) VALUES
+    (4,1),
+    (2,2),
+    (1,3),
+    (3,4),
+    (2,5),
+    (5,6),
+    (3,7),
+    (4,8),
+    (2,9),
+    (1,10),
+    (1,11),
+    (2,12),
+    (3,13),
+    (4,14),
+    (1,15),
+    (2,16),
+    (1,17),
+    (3,18),
+    (1,19);

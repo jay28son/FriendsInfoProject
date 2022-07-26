@@ -1,0 +1,110 @@
+
+select a.id, a.first_name, a.last_name, c.boba_drink, c.boba_cost$
+FROM friendsinfo AS A
+inner JOIN friends_boba_order AS B
+    on A.ID = B.FRIEND_ID
+inner JOIN (SELECT BOBA_drink,boba_id, boba_cost$ 
+            FROM BOBA_ORDERS
+            GROUP BY boba_id ) as C
+    on b.boba_id = c.boba_id
+order by a.id;
+
+
+SELECT a.id, a.first_name, a.last_name, C.FOOD_NAME, C.FOOD_COST$
+FROM friendsinfo AS a
+INNER JOIN friends_food_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS C
+ON B.FOOD_ID = C.FOOD_ID
+
+--Costs of each Person
+
+SELECT a.id, a.first_name, a.last_name, C.BOBA_DRINK, C.BOBA_COST$, E.CULTURE, E.AVG_FOOD_COST$, SUM(c.boba_cost$ + e.AVG_food_cost$) AS TOTAL_COST$
+FROM friendsinfo AS a
+INNER JOIN friends_boba_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM boba_orders
+            GROUP BY BOBA_ID) AS C
+ON B.BOBA_ID = C.BOBA_ID
+INNER JOIN friends_food_order AS D
+ON A.ID = D.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS E
+ON D.FOOD_ID = E.FOOD_ID
+GROUP BY A.ID;
+
+--Total Cost Spent For Each Gender
+
+SELECT A.GENDER, E.CULTURE,SUM(c.boba_cost$ + e.AVG_food_cost$) AS TOTAL_COST$_SPENT_PER_GENDER_PER_FOOD
+FROM friendsinfo AS a
+INNER JOIN friends_boba_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM boba_orders
+            GROUP BY BOBA_ID) AS C
+ON B.BOBA_ID = C.BOBA_ID
+INNER JOIN friends_food_order AS D
+ON A.ID = D.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS E
+ON D.FOOD_ID = E.FOOD_ID
+GROUP BY A.GENDER,E.CULTURE
+ORDER BY TOTAL_COST$_SPENT_PER_GENDER_PER_FOOD ASC;
+
+
+--Average Amount Spent Based On Gender
+
+SELECT A.GENDER, TRUNCATE(AVG(c.boba_cost$ + e.AVG_FOOD_COST$),2) AS TOTAL_COST$
+FROM friendsinfo AS a
+INNER JOIN friends_boba_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM boba_orders
+            GROUP BY BOBA_ID) AS C
+ON B.BOBA_ID = C.BOBA_ID
+INNER JOIN friends_food_order AS D
+ON A.ID = D.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS E
+ON D.FOOD_ID = E.FOOD_ID
+GROUP BY A.GENDER;
+
+
+SELECT A.GENDER,c.boba_drink, count(boba_drink) as AMOUNT_BOUGHT, (COUNT(BOBA_DRINK)*BOBA_COST$) AS TOTAL_COST_PER_DRINK_PER_GENDER
+ FROM FRIENDSINFO AS A
+INNER JOIN friends_boba_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM boba_orders
+            GROUP BY BOBA_ID) AS C
+ON B.BOBA_ID = C.BOBA_ID
+INNER JOIN friends_food_order AS D
+ON A.ID = D.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS E
+ON D.FOOD_ID = E.FOOD_ID
+GROUP BY a.gender, c.boba_Drink;
+
+
+SELECT A.GENDER, e.culture, count(E.culture) as AMOUNT_BOUGHT, (count(e.culture)*e.avg_food_cost$) as TOTAL_COST_PER_FOOD_PER_GENDER
+FROM FRIENDSINFO AS A
+INNER JOIN friends_boba_order AS B
+ON A.ID = B.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM boba_orders
+            GROUP BY BOBA_ID) AS C
+ON B.BOBA_ID = C.BOBA_ID
+INNER JOIN friends_food_order AS D
+ON A.ID = D.FRIEND_ID
+INNER JOIN (SELECT * 
+            FROM FOOD 
+            GROUP BY FOOD_ID ) AS E
+ON D.FOOD_ID = E.FOOD_ID
+GROUP BY a.gender, e.culture;
