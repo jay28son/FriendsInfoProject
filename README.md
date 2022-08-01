@@ -26,7 +26,8 @@ Transformed the database into a csv file to make it compatible with Tableau. Imp
 
 
 ## 3. Drinks Per Gender Visualization
-![Food Per Person Vs Gender](https://user-images.githubusercontent.com/100823027/182071547-79350290-005f-47b2-a53c-c14038fafa3e.PNG)
+![Boba Per Person Vs Gender](https://user-images.githubusercontent.com/100823027/182071698-443e1e72-66a1-4588-a3a6-adc9301c9082.PNG)
+
 
 
 ## 4. Relational Modelling
