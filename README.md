@@ -1,6 +1,6 @@
 # FriendsInfoProject
 ## Overview
-Created a database to compare favorite food type and boba drinks within my personal friend group and how much that person would spend to pay for their favorite meal.
+Created a database to compare favorite food type and boba drinks within my personal friend group,how much that person would spend to pay for their favorite meal and to see if there were any trends in the data.
 
 ## Softwares Used
 1. SQL
