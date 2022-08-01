@@ -15,7 +15,7 @@ Utilizied SQL and XAMPP to create the database. Organized the tables to replicat
 
 
 # Tableau Public
-Transformed the database into a csv file to make it compatible with Tableau. Implemented four different bar graphs to analyze and see if there are any correlations or patterns within the data. F
+Transformed the database into a csv file to make it compatible with Tableau. Implemented four different bar graphs to analyze and see if there are any correlations or patterns within the data. 
 
 ## 1. Cost Per Person Visualization
 ![CostPerPerson](https://user-images.githubusercontent.com/100823027/182069982-1f01731c-c50f-409d-b417-e1ee10437720.PNG)
