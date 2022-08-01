@@ -10,6 +10,8 @@ Created a database to compare favorite food type and boba drinks within my perso
 
 # SQL/Xampp
 Utilizied SQL on Visual Studio Code and XAMPP to create the database. Organized the tables to replicate a real business scenario eg. a table containing only the boba name, id, and costs and joining the table with a table that has the friend_id to show what each person ordered. Integrated JOIN clauses with subqueries to show all data needed within 1 query eg.
+![Sql_Join_Example](https://user-images.githubusercontent.com/100823027/182067069-29822398-1ef7-401a-b692-b25b37d0e879.PNG)
+
 
 # Tableau
 Transformed the database into a csv file
