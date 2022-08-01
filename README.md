@@ -8,10 +8,10 @@ Created a database to compare favorite food type and boba drinks within my perso
 4. Tableau Public
 5. Visual Studio Code
 
-#SQL/Xampp
+##SQL/Xampp
 Utilizied SQL on Visual Studio Code and XAMPP to create the database. Organized and analyzed the tables to replicate a real business scenario eg. a table containing only the boba name, id, and costs and joining the table with a table that has the friend_id to show what each person ordered. 
 
-#Tableau
+##Tableau
 Transformed the database into a csv file
 
 ## 1. Cost Per Person Visualization
