@@ -1,6 +1,6 @@
 # FriendsInfoProject
 ## Overview
-Created a database to compare favorite food type and boba drinks within my personal friend group,how much that person would spend to pay for their favorite meal and to see if there were any trends in the data.
+Created a database using a sample size of my friend group to compare favorite food type and boba drinks ,how much that person would spend to pay for their favorite meal and to see if there were any trends in the data.
 
 ## Softwares Used
 1. SQL
@@ -13,8 +13,8 @@ Utilizied SQL on Visual Studio Code and XAMPP to create the database. Organized 
 ![Sql_Join_Example](https://user-images.githubusercontent.com/100823027/182067069-29822398-1ef7-401a-b692-b25b37d0e879.PNG)
 
 
-# Tableau
-Transformed the database into a csv file
+# Tableau Public
+Transformed the database into a csv file to make it compatible with Tableau. Implemented four different bar graphs to analyze and see if there are any correlations or patterns within the data. F
 
 ## 1. Cost Per Person Visualization
 ![CostPerPerson](https://user-images.githubusercontent.com/100823027/180923574-afd603f9-487f-4074-87b6-591673e0c67f.PNG)
