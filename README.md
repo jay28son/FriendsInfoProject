@@ -20,7 +20,8 @@ Transformed the database into a csv file to make it compatible with Tableau. Imp
 ![CostPerPerson](https://user-images.githubusercontent.com/100823027/180923574-afd603f9-487f-4074-87b6-591673e0c67f.PNG)
 
 ## 2. Food Per Gender Visualization 
-![Food Bought, Costs Per Gender](https://user-images.githubusercontent.com/100823027/180923786-52658573-59d7-49fb-a1be-546382cf876a.PNG)
+![Food Per Person Vs Gender](https://user-images.githubusercontent.com/100823027/182069318-38a9545c-9210-46c8-9f85-a837b61407fd.PNG)
+
 
 ## 3. Drinks Per Gender Visualization
 ![Drinks Bought Per Gender](https://user-images.githubusercontent.com/100823027/180923788-4c8425ac-3b06-4e54-8196-20f6cc477ddc.PNG)
