@@ -17,7 +17,8 @@ Utilizied SQL on Visual Studio Code and XAMPP to create the database. Organized 
 Transformed the database into a csv file to make it compatible with Tableau. Implemented four different bar graphs to analyze and see if there are any correlations or patterns within the data. F
 
 ## 1. Cost Per Person Visualization
-![CostPerPerson](https://user-images.githubusercontent.com/100823027/180923574-afd603f9-487f-4074-87b6-591673e0c67f.PNG)
+![CostPerPerson](https://user-images.githubusercontent.com/100823027/182069982-1f01731c-c50f-409d-b417-e1ee10437720.PNG)
+
 
 ## 2. Food Per Gender Visualization 
 ![Food Per Person Vs Gender](https://user-images.githubusercontent.com/100823027/182069318-38a9545c-9210-46c8-9f85-a837b61407fd.PNG)
