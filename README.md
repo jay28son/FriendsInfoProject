@@ -1,13 +1,18 @@
 # FriendsInfoProject
 ## Overview
-
+Created a database to compare favorite food type and boba drinks within my personal friend group and how much that person would spend to pay for their favorite meal.
 
 ## Softwares Used
 1. SQL
 2. XAMPP
-3. Microsoft Excel
 4. Tableau Public
+5. Visual Studio Code
 
+#SQL/Xampp
+Utilizied SQL on Visual Studio Code and XAMPP to create the database. Organized and analyzed the tables to replicate a real business scenario eg. a table containing only the boba name, id, and costs and joining the table with a table that has the friend_id to show what each person ordered. 
+
+#Tableau
+Transformed the database into a csv file
 
 ## 1. Cost Per Person Visualization
 ![CostPerPerson](https://user-images.githubusercontent.com/100823027/180923574-afd603f9-487f-4074-87b6-591673e0c67f.PNG)
