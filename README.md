@@ -1,4 +1,4 @@
-# FriendsInfoProject
+# FriendsFavoritesProject
 ## Overview
 Created a database using a sample size of my friend group to compare favorite food type and boba drinks, how much that person would spend to pay for their favorite meal and to see if there were any trends in the data.
 
